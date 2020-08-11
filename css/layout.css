@@ -1,0 +1,63 @@
+body {
+  width: 480px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* text-align: center; */
+  outline: solid red 1px;
+}
+
+header {
+  height: 75px;
+  outline: solid orange 1px;
+  position: relative;
+}
+
+main > article {
+  height: 150px;
+  outline: orchid solid 1px;
+  position: relative;
+}
+
+main > div > section:first-child > div {
+  height: 125px;
+  outline: orchid solid 1px;
+  position: relative;
+}
+
+main > div > section:nth-child(2){
+  overflow: hidden;
+}
+
+main > div > section:nth-child(2) > div {
+  width: 240px;
+  height: 250px;
+  outline: green solid 1px;
+  float: left;
+  position: relative;
+}
+
+main > div > div {
+  height: 80px;
+  outline: indigo solid 1px;
+  position: relative;
+}
+
+p {
+  /* guide for centering vertically */
+  /* https://css-tricks.com/centering-css-complete-guide/ */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  outline: lawngreen dotted 1px;
+}
+
+
+
+
+
+
+
+
