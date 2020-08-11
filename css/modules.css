@@ -1,0 +1,114 @@
+header {
+  outline: solid #979797 3px;
+  background-color: rgb(0, 220, 169);
+}
+
+main > article {
+  outline: solid #979797 3px;
+  background-color: rgba(0, 200, 169, 0.95);
+}
+
+main > div > section:first-child > div {
+  outline: solid #979797 3px;
+  background-color: rgba(0, 180, 169, 0.9);
+}
+
+main > div > section:first-child > div:nth-child(2) {
+  background-color: rgba(0, 160, 169, 0.85);
+}
+
+main > div > section:nth-child(2) > div {
+  outline: solid #979797 3px;
+  background-color: rgba(0, 140, 169, 0.8);
+}
+
+main > div > section:nth-child(2) > div:nth-child(2) {
+  background-color: rgba(0, 120, 169, 0.75);
+}
+
+main > div > section:nth-child(2) > div:nth-child(3) {
+  background-color: rgba(0, 100, 169, 0.7);
+}
+
+main > div > section:nth-child(2) > div:nth-child(4) {
+  background-color: rgba(0, 80, 169, 0.65);
+}
+
+main > div > div {
+  outline: solid #979797 3px;
+  background-color: rgba(0, 60, 169, 0.6);
+}
+
+p {
+  text-align: center;
+  background-color: transparent;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  body {
+    outline: solid #979797 3px;
+    z-index: 6;
+  }
+
+  header {
+    outline: solid #979797 3px;
+    z-index: 5;
+    background-color: rgb(220, 0, 169);
+  }
+
+  main > article {
+    outline: solid #979797 3px;
+    z-index: 4;
+    background-color: rgba(200, 0, 169, 0.95);
+  }
+
+  main > div {
+    outline: solid #979797 3px;
+  }
+
+  main > div > section:first-child > div {
+    outline: solid #979797 3px;
+    z-index: 1;
+    background-color: rgba(180, 0, 169, 0.9);
+  }
+
+  main > div > section:first-child > div:nth-child(2) {
+    background-color: rgba(160, 0, 169, 0.85);
+  }
+
+  main > div > section:nth-child(2) > div {
+    outline: solid #979797 3px;
+    z-index: 2;
+    background-color: rgba(140, 0, 169, 0.8);
+  }
+
+  main > div > section:nth-child(2) > div:nth-child(2) {
+    background-color: rgba(120, 0, 169, 0.75);
+  }
+  
+  main > div > section:nth-child(2) > div:nth-child(3) {
+    background-color: rgba(100, 0, 169, 0.7);
+  }
+  
+  main > div > section:nth-child(2) > div:nth-child(4) {
+    background-color: rgba(80, 0, 169, 0.65);
+  }
+
+  main > div > div {
+    outline: solid #979797 3px;
+    z-index: 3;
+    background-color: rgba(60, 0, 169, 0.6);
+  }
+
+  p {
+    text-align: center;
+  }
+
+}
+
+
+
+
