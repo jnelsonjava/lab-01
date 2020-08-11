@@ -3,25 +3,20 @@ body {
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  /* text-align: center; */
-  outline: solid red 1px;
 }
 
 header {
   height: 75px;
-  outline: solid orange 1px;
   position: relative;
 }
 
 main > article {
   height: 150px;
-  outline: orchid solid 1px;
   position: relative;
 }
 
 main > div > section:first-child > div {
   height: 125px;
-  outline: orchid solid 1px;
   position: relative;
 }
 
@@ -32,14 +27,12 @@ main > div > section:nth-child(2){
 main > div > section:nth-child(2) > div {
   width: 240px;
   height: 250px;
-  outline: green solid 1px;
   float: left;
   position: relative;
 }
 
 main > div > div {
   height: 80px;
-  outline: indigo solid 1px;
   position: relative;
 }
 
@@ -49,14 +42,74 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  text-align: center;
   width: 100%;
-  outline: lawngreen dotted 1px;
 }
 
 
+/* reference for @media
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 
+@media only screen and (min-width: 768px) {
+  
+  body {
+    position: relative;
+    width: 960px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
+  header {
+    height: 100px;
+    max-width: 960px;
+  }
+
+  main {
+    max-width: 960px;
+    overflow: hidden;
+  }
+
+  main > article {
+    height: 600px;
+    width: 200px;
+    float: left;
+    position: relative;
+  }
+
+  main > div {
+    float: left;
+    width: 760px;
+    overflow: hidden;
+  }
+
+  section {
+    overflow: hidden;
+  }
+
+  main > div > section:first-child > div {
+    height: 200px;
+    width: 380px;
+    float: left;
+  }
+
+  main > div > section:nth-child(2) > div {
+    width: 190px;
+    height: 250px;
+    float: left;
+  }
+
+  main > div > div {
+    height: 150px;
+  }
+
+  p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+
+}
 
 
 
