@@ -1,0 +1,102 @@
+/* reference for grid */
+/* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+body * {
+  position: relative;
+}
+
+body {
+  width: 480px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 480px;
+  grid-template-rows: 75px 980px;
+}
+
+header > section {
+  height: 100%;
+}
+
+section {
+  /* reference for centering content */
+  /* https://scotch.io/tutorials/centering-things-with-css-flexbox#toc-centering-horizontally-and-vertically-with-flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 240px 240px;
+  grid-template-rows: 150px 125px 125px 250px 250px 80px;
+}
+
+main > section {
+  grid-column-end: span 2;
+}
+
+.little-boxes {
+  grid-column-end: span 1;
+}
+
+@media only screen and (min-width: 533px) {
+  
+  body {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 980px;
+  }
+  
+  header > section {
+    height: 100%;
+  }
+  
+  section {
+    text-align: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 125px 125px 250px 250px 80px;
+  }
+
+}
+
+/* reference for @media
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+
+@media only screen and (min-width: 768px) {
+  
+  body {
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 200px repeat(4, 1fr);
+    grid-template-rows: 200px 250px 150px;
+  }
+  
+  main > section:first-child {
+    grid-row-end: span 3;
+    grid-column-end: span 1;
+  }
+
+  main > section:nth-child(8) {
+    grid-column-end: span 4;
+  }
+}
+
+
+
+
